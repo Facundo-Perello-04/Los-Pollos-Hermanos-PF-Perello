@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color:#fccc00;
+    min-height: 100%;
+    margin: 0;
+}
+.grid-container > *{
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.header{
+    grid-area: header;
+    background-image: url(../imgs/headerFondo.jpg);
+    color: white;
+   padding: 50px;
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+
+}
+.menuPrincipal{
+    font-weight: 600;
+    padding-right: 10px;
+}
+.menuPrincipal li a:hover{
+    color: blue;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "header" 100px
+    "main" auto
+    "footer" 100px
+    ;
+
+}
+h1{
+    color: black;
+    font-family: 'Young Serif';
+
+}
+ul li{
+    color: white;
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+}
+ul li a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
