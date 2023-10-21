@@ -1,6 +1,11 @@
+/*fuentes */
+
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
+
+/*index y interfaz */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -81,9 +86,47 @@ ul li a{
     color: white;
 }
 
+/*cocineros diapositiva */
 
-
-
+.flex-container{
+    margin: 40px;
+    
+   
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px;
+}
+.flex-item{
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: auto;
+   
+    height: auto;
+}
+.flex1{
+    background-color: aliceblue;
+    
+}
+.flex2{
+    background-color: aliceblue;
+}
+.flex3{
+    background-color: aliceblue;
+}
+.PresentacionPerImg{
+    width: 50%;
+}
+.presentacionTitulo{
+    font-size: 21px;
+}
+.presentacionParrafo{
+    font-size: 18px;
+}
+.PresentacionPerImg, .presentacionTitulo, .presentacionParrafo{
+    margin-bottom: 10px;
+}
 
 
 
