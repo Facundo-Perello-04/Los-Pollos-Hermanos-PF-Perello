@@ -14,6 +14,26 @@
 html{
     height: 100%;
 }
+h1{
+    color: black;
+    font-family: 'Young Serif';
+
+}
+div {
+    display: block;
+}
+img {
+    overflow: clip;
+    border-style: none;
+}
+h2{
+    font-family:  'Young Serif';
+
+}
+p{
+    font-family: 'Gabarito';
+
+}
 body{
     background-color:#fccc00;
     min-height: 100%;
@@ -60,6 +80,7 @@ a{
     grid-area: footer;
     background-color: black;
     color: white;
+    font-family:  'Young Serif';
 }
 .grid-container{
     display: grid;
@@ -128,12 +149,89 @@ ul li a{
     margin-bottom: 10px;
 }
 
+/*servicio*/
+.menuServicio{
+    background-color: black;
+    list-style: none;
+    padding: 25px;
+    margin: 10px;
+    display: flex;
+    font-family: 'Gabarito'
 
+}
 
+/*mas informacion*/
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 56rem;
+}    
+.tituloMasInfo{
+    margin: 2rem;
+    color: #9f1000;
+    font-size: 2.8em;
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+.infoPadre{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.infoPadre .columna{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
 
+.columna{
+    width: 26rem;
+    margin: 10px;
+    padding: 15px;
+}
 
+.infoPadre .columna first-child div:nth-child(1){
+    margin: 0 0 2rem;
+}
+.cajaInformacion{
+    background: #fff;
+    color: #002a86;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    padding: 2rem;
+    position: relative;
+    font-family:  'Gabarito';
+}
+/*contacto legal*/
+.infoSaul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+   }
+.saulParrafo{
+ font-size: 18px;
+ margin: 20px;
+ display: block;
+padding: 10px; 
+ background-color: #fff;
+ }
 
+/*Formulario */
+.contenedorForm{
+    background-color: black;
+    color: aqua;
+    padding: 30px;
+    font-family:  'Gabarito';
+    position: relative;
+    margin: 30px;
 
+}
 
 
 
