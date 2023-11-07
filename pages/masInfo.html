@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mas informacion</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" href="../imgs/logoPollosHermanos.png">
 </head>
@@ -15,69 +17,63 @@
            
                 
         </div>
-        <nav>
+        <nav class="navBarMenuPrincipal"> 
             <ul class="menuPrincipal">
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="./servicio.html">servicio</a></li>
-                <li><a href="./contactoLegal.html">contacto legal</a></li><!--saul goodman -->
-                <li><a href="./encuesta.html">encuesta</a></li>
-                <li><a href="./cocineros.html">cocineros</a></li>
-                <li><a href="./masInfo.html">Más informacion</a></li>
+                <li  class="menuLi"><a href="../index.html">inicio</a></li>
+                <li class="menuLi"><a href="./servicio.html">servicio</a></li>
+                <li class="menuLi"><a href="./contactoLegal.html">contacto legal</a></li><!--saul goodman -->
+                <li class="menuLi"><a href="./encuesta.html">encuesta</a></li>
+                <li class="menuLi"><a href="./cocineros.html">cocineros</a></li>
+                <li class="menuLi"><a href="./masInfo.html">Más info..</a></li>
             </ul>
         
         </nav>
 
     </header>
     <main class="main">
-        <div class="container">
-            <h2 class="tituloMasInfo">
-                <span>Nuestra Historia</span>
-            </h2>
-            <div class="infoPadre">
-               
-                <div class="columna">
-                    <div class="cajaInformacion">
-                        Los Pollos Hermanos es un restaurante familiar informal de rápido crecimiento fundado por Gus Fring y su socio comercial Max Arciniega. Juntos, los "hermanos del pollo" se hicieron un nombre para ellos y para el restaurante de su pequeño pueblo al utilizar sabores y especias auténticos para preparar el pollo más sabroso al sur de la frontera.
-        
-                        
-                    </div>
-    
-    
+      <h1 class="masinfoTitulo">Nuestra Historia</h1>
+      <div class="cajaMasinfo" >Los Pollos Hermanos es un restaurante familiar informal de rápido crecimiento fundado por Gus Fring y su socio comercial Max Arciniega. Juntos, los "hermanos del pollo" se hicieron un nombre para ellos y para el restaurante de su pequeño pueblo al utilizar sabores y especias auténticos para preparar el pollo más sabroso al sur de la frontera. </div>
+
+      <div class="cajaMasinfo2"> Desde entonces, Los Pollos Hermanos ha abierto nuestras puertas en los Estados Unidos, sirviendo a familias como la suya. ¡Y esperamos seguir creciendo!</div>
+
+      
+
+
+                <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="columna">
-                    <div class="cajaInformacion">
-                        Desde entonces, Los Pollos Hermanos ha abierto nuestras puertas en los Estados Unidos, sirviendo a familias como la suya. ¡Y esperamos seguir creciendo!
-    
-                    </div>
-                   
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../imgs/masInfoimg1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imgs/masiInfoimg2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imgs/masinfoimg3.jpg" class="d-block w-100" alt="...">
+                  </div>
                 </div>
-    
-            </div>
-        </div>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../imgs/masInfoimg1.jpg" style="width:900px;height:500px;" class="d-block w-100" alt="foto-info-los-pollos-1">
-              </div>
-              <div class="carousel-item">
-                <img src="../imgs/masiInfoimg2.jpg" style="width:900px;height:500px;" class="d-block w-100" alt="foto-info-los-pollos-2">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+      
 
     </main>
     <footer class="footer">
         
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>

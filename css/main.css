@@ -23,11 +23,19 @@
 }
 html{
     height: 100%;
+    width: 100%;
 }
 h1{
-    color: black;
+    color: #9f1000;
     font-family: 'Young Serif';
+    font-size: 50px;
+    padding: 15px;
 
+}
+
+h3{
+    color: #9f1000;
+    font-family: 'Young Serif' ;
 }
 div {
     display: block;
@@ -47,7 +55,10 @@ p{
 body{
     background-color:#fccc00;
     min-height: 100%;
-    margin: 0;
+    margin: 0px;
+}
+.footerLista{
+    list-style: none;
 }
 .grid-container > *{
     border-radius: 4px;
@@ -57,12 +68,13 @@ body{
 .header{
     grid-area: header;
     background-image: url(../imgs/headerFondo.jpg);
-    color: white;
-   padding: 50px;
+
+    color: black;
+   padding: 1px;
     display: flex;
     min-height: 70px;
-    justify-content: space-between;
     align-items: center;
+    margin-top: 0px;
 
 
 }
@@ -70,18 +82,48 @@ body{
     display: flex;
     align-items: center;
     margin-right: 10px;
+    justify-content: space-around;
 
 
 }
 .menuPrincipal{
     font-weight: 600;
     padding-right: 10px;
+    color: black;
+    justify-content: end;
+    align-items: center;
+   /* background-color: aqua;*/
+   padding-top: 15px;
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   padding: 5px;
+   margin: 5px;
+}
+.navBarMenuPrincipal{
+    justify-content: end;
+   /* background-color: #9f1000;*/
+    width: 100%;
+    height: 100%;
+    align-items: center;
 }
 .menuPrincipal li a:hover{
-    color: blue;
+    padding: 5.5px;
+    color: white;
+
+}
+.menuLi{
+    color:rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 15px;
+    margin: 2px;
+    /*background-color: black;*/
 }
 a{
     text-decoration: none;
+    
 }
 .main{
     grid-area: main;
@@ -93,34 +135,38 @@ a{
     font-family:  'Young Serif';
 }
 
-h1{
-    color: black;
-    font-family: 'Young Serif';
 
-}
-ul li{
-    color: white;
-    list-style: none;
-    display: inline;
-    margin-right: 10px;
-}
+
 ul li a{
-    color: white;
+    color: rgb(221, 221, 221);
+   
+    
+    background-color: #002a86;
+    padding: 5px;
+    margin-left: 1px;
+    border-radius: 0.3rem;
+    transition-delay: 0.1s;
+    justify-content: center;
+    
 }
 .videoIndex{
     
     width: auto;
     height: auto;
-    border: 8rem;
+    border: 1rem;
     border-color: black;
 
 }
 .videoPresentacion{
-    width: 50%;
-    height: 70%;
+    width: 60%;
+    height: 80%;
 
 
 
+}
+.videoPresentacion2{
+    width: 70%;
+    height: 60%;
 }
     
 /*cocineros diapositiva */
@@ -134,6 +180,7 @@ ul li a{
     flex-wrap: wrap;
     align-content: flex-start;
     gap: 10px;
+    margin: 10px;
 }
 .flex-item{
     flex-basis: 200px;
@@ -142,10 +189,25 @@ ul li a{
     height: auto;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+
+    transition: transform 1s;
 }
+
 .flex1{
     background-color: aliceblue;
     
+}
+.flex2:hover{
+    transform: scale(1.1);
+}
+.flex1:hover{
+    transform: scale(1.1);
+}
+.flex3:hover{
+    transform: scale(1.1);
 }
 .flex2{
     background-color: aliceblue;
@@ -167,84 +229,161 @@ ul li a{
 }
 
 /*servicio*/
+.servicio{
+    min-width: 250px;
+}
 .menuServicio{
-    background-color: black;
+    color: white;
+    font-family: 'Gabarito';
+    background-color: white;
     list-style: none;
-    padding: 25px;
-    margin: 10px;
-    display: flex;
-    font-family: 'Gabarito'
-
-}
-
-/*mas informacion*/
-.container {
-    margin: 0 auto;
-    padding: 0 1rem;
-    width: 56rem;
-}    
-.tituloMasInfo{
-    margin: 2rem;
-    color: #9f1000;
-    font-size: 2.8em;
-    line-height: 1;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
-}
-.infoPadre{
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-}
-.infoPadre .columna{
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-}
-
-.columna{
-    width: 26rem;
-    margin: 10px;
     padding: 15px;
-}
+    margin: 15px; 
 
-.infoPadre .columna first-child div:nth-child(1){
-    margin: 0 0 2rem;
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 250px;
+
+
+
+
+
+
+    
+   
+
 }
-.cajaInformacion{
-    background: #fff;
-    color: #002a86;
-    font-size: 1.2em;
-    line-height: 1.6em;
-    padding: 2rem;
-    position: relative;
-    font-family:  'Gabarito';
+.menuServicio li {
+    padding: 10px;
+
+    
+}
+.menuServicio li a:hover{
+    color:white;
+    padding: 6px;
+    
+}
+.ejecutivo{
+    color: black;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    min-width: 250px;
+    flex-wrap: wrap;
+}
+.gerente{
+    color: black;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    min-width: 250px;
+    flex-wrap: wrap;
+
+}
+.cocinero{
+    color: black;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    min-width: 250px;
+    flex-wrap: wrap;
+}
+.camionero{
+    color: black;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    min-width: 250px;
+    flex-wrap: wrap;
+}
+.servicioSubtitulo{
+    margin: 5px;
+    padding: 15px;
+    font-family: 'Gabarito';
+    font-size: 40px;
+
+}
+.parrafoServicio{
+    font-family: 'Young Serif';
+    text-align: start;
+    
+
+}
+.servicioLista{
+    color: black;
+    font-family: 'Young Serif';
+    flex-wrap: wrap;
+    margin-right: 10px;
+    text-align: start;
+  
+
+    }
+/*mas informacion*/
+.masinfoTitulo{
+    font-family:'Young Serif' ;
+    color: #9f1000;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.cajaMasinfo{
+    background-color: white;
+    margin: 30px ;
+    padding: 20px;
+    color: #002a86; 
+    font-family: 'Gabarito';
+    text-align: left;
+   border-radius: 10px;
+   -webkit-animation:slide-in-tl .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-tl .5s cubic-bezier(.25,.46,.45,.94) both;
+}
+.cajaMasinfo2{
+    background-color: white;
+    margin: 30px ;
+    padding: 20px;
+    color: #002a86; 
+    font-family: 'Gabarito';
+    text-align: left;
+   border-radius: 10px;
+   -webkit-animation:slide-in-tl .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-tl .5s cubic-bezier(.25,.46,.45,.94) both;
+   animation-delay: 1s;
+
+}
+.carousel {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+.slide{
+    margin-top: 10px;
+}
+.slide img{
+    height: 65vh;
+
 }
 /*contacto legal*/
 .infoSaul{
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
     height: auto;
     width: auto;
    }
 .saulParrafo{
  font-size: 18px;
  margin: 20px;
- display: block;
+ display: flex;
 padding: 10px; 
  background-color: #fff;
  }
 
 /*Formulario */
 .contenedorForm{
-    background-color: black;
-    color: aqua;
+    background-color: white;
+    color: #9f1000;
     padding: 30px;
     font-family:  'Gabarito';
     position: relative;
@@ -257,20 +396,53 @@ padding: 10px;
 /*media queries*/
 
 @media screen and (max-width: 700px){
+    .menuPrincipal{
+        align-items:  center;
+        justify-content: center;
+    }
+    .menuLi{
+        padding: 5px;
+        margin: 5px;
+        padding-top: 10px;
+    }
     .logo{
         display: none;
         
     }
+    .ul li a{
+        margin: 30px;
+        padding: 10px;
+        margin-top:1rem;
+    }
+    .grid-container{
+        display: grid;
+    gap: 10px;
+    grid-template: 
+    "header" 120px
+    "main" auto
+    "footer" 100px
+    ;
+
+    }
+
+    
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 359px){
    
+    .menuLi{
+        padding: 10px;
+        margin: 15px;
+        padding-top: 10px;
+    }
     .menuPrincipal{
         display: flex;
         width: auto;
         height: auto;
         margin:40px;
         padding: 40px;
+        padding-top: 10px;
+        justify-content: center;
     }
     .header{
         display: flex;
@@ -290,9 +462,21 @@ padding: 10px;
     
     
     }
+    .ul li a{
+        margin: 10px;
+    }
         
 }
     
+@media screen and(min-width: 768px){
+    .menuServicio{
+        flex-direction: row;
+    }
+}
 
+/*ANIMISTA*/
+.slide-in-tl{-webkit-animation:slide-in-tl .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-tl .5s cubic-bezier(.25,.46,.45,.94) both}
+
+ @-webkit-keyframes slide-in-tl{0%{-webkit-transform:translateY(-1000px) translateX(-1000px);transform:translateY(-1000px) translateX(-1000px);opacity:0}100%{-webkit-transform:translateY(0) translateX(0);transform:translateY(0) translateX(0);opacity:1}}@keyframes slide-in-tl{0%{-webkit-transform:translateY(-1000px) translateX(-1000px);transform:translateY(-1000px) translateX(-1000px);opacity:0}100%{-webkit-transform:translateY(0) translateX(0);transform:translateY(0) translateX(0);opacity:1}}
 
 

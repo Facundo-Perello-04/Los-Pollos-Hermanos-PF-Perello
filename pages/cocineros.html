@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cocineros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" href="../imgs/logoPollosHermanos.png">
 </head>
@@ -15,32 +16,32 @@
            
                 
         </div>
-        <nav>
+        <nav class="navBarMenuPrincipal">
             <ul class="menuPrincipal">
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="./servicio.html">servicio</a></li>
-                <li><a href="./contactoLegal.html">contacto legal</a></li><!--saul goodman -->
-                <li><a href="./encuesta.html">encuesta</a></li>
-                <li><a href="./cocineros.html">cocineros</a></li>
-                <li><a href="./masInfo.html">Más informacion</a></li>
+                <li  class="menuLi"><a href="../index.html">inicio</a></li>
+                <li class="menuLi"><a href="./servicio.html">servicio</a></li>
+                <li class="menuLi"><a href="./contactoLegal.html">contacto legal</a></li><!--saul goodman -->
+                <li class="menuLi"><a href="./encuesta.html">encuesta</a></li>
+                <li class="menuLi"><a href="./cocineros.html">cocineros</a></li>
+                <li class="menuLi"><a href="./masInfo.html">Más info..</a></li>
             </ul>
         
-        </nav>
+        </nav> 
 
     </header>
     <main class="main">
         <section class="flex-container">
-            <div class="flex-item flex1">
+            <div class="flex-item flex1" data-aos="fade-left">
                 <img class="PresentacionPerImg" src="../imgs/walterWhite.webp" alt="fotoWalterW">
                 <h4 class="presentacionTitulo">Walter White</h4>
                 <p class="presentacionParrafo">Walter "Walt" Hartwell White, también conocido por su seudónimo clandestino "Heisenberg", es un químico y profesor de química de Albuquerque, Nuevo México</p>
             </div>
-            <div class="flex-item flex2">
+            <div class="flex-item flex2" data-aos="flip-down">
                 <img class="PresentacionPerImg" src="../imgs/jessePinkman.webp" alt="fotoJesseP">
                 <h4 class="presentacionTitulo">Jesse Pinkman</h4>
                 <p class="presentacionParrafo">Jesse Bruce Pinkman es el compañero de Walter White en el tráfico de metanfetamina. En el instituto, Jesse era un consumidor, fabricante y traficante de poca monta de metanfetamina. Era un estudiante que prestaba poca atención a las clases de química de su profesor, el propio Walter.</p>
             </div>
-            <div class="flex-item flex3">
+            <div class="flex-item flex3" data-aos="zoom-in-up">
                 <img class="PresentacionPerImg" src="../imgs/galeFoto.jpg" alt="galeFoto">
                 <h4 class="presentacionTitulo">Gale boetticher </h4>
                 <p class="presentacionParrafo">Gale Boetticher fue un químico contratado por Gus Fring para ayudar a establecer el nuevo laboratorio y trabajar como asistente de Walter White. Tiene un grado MS en química orgánica, con una especialidad en cristalografía de rayos X.</p>
@@ -54,6 +55,10 @@
     <footer class="footer">
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
