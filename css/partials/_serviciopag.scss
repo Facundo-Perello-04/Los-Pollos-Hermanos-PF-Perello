@@ -1,0 +1,94 @@
+.servicio{
+    min-width: 250px;
+}
+.menuServicio{
+    color: white;
+    font-family: $fontGabarito;
+    background-color: white;
+    list-style: none;
+    padding: 15px;
+    margin: 15px; 
+
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 250px;
+
+
+
+
+
+
+    
+   
+
+}
+.menuServicio li {
+    padding: 10px;
+
+    
+}
+.menuServicio li a:hover{
+    color:white;
+    padding: 6px;
+    
+}
+.ejecutivo{
+    color: black;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    min-width: 250px;
+    flex-wrap: wrap;
+}
+.gerente{
+    color: black;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    min-width: 250px;
+    flex-wrap: wrap;
+
+}
+.cocinero{
+    color: black;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    min-width: 250px;
+    flex-wrap: wrap;
+}
+.camionero{
+    color: black;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    min-width: 250px;
+    flex-wrap: wrap;
+}
+.servicioSubtitulo{
+    margin: 5px;
+    padding: 15px;
+    font-family: $fontGabarito;
+    font-size: 40px;
+
+}
+.parrafoServicio{
+    font-family: $fontYoungserif;
+    text-align: start;
+    
+
+}
+.servicioLista{
+    color: black;
+    font-family: $fontYoungserif;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    text-align: start;
+  
+
+    }
+    

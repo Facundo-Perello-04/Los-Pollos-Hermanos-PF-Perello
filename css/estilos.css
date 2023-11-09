@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap");
+/*ANIMACIONES*/
+.slide-in-tl {
+  animation: slide-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-tl {
+  0% {
+    transform: translateY(-1000px) translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+.tracking-in-expand {
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  color: #9f1000;
+  font-family: "Young Serif";
+  font-size: 50px;
+  padding: 15px;
+}
+
+h3 {
+  color: #9f1000;
+  font-family: "Young Serif";
+}
+
+div {
+  display: block;
+}
+
+img {
+  overflow: clip;
+  border-style: none;
+}
+
+h2 {
+  font-family: "Young Serif";
+}
+
+p {
+  font-family: "Gabarito";
+}
+
+body {
+  background-color: #fccc00;
+  min-height: 100%;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template: "header" 100px "main" auto "footer" 100px;
+}
+@media screen and (max-width: 700px) {
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template: "header" 120px "main" auto "footer" 100px;
+  }
+}
+
+body {
+  background-color: #fccc00;
+  min-height: 100%;
+}
+
+.footerLista {
+  list-style: none;
+}
+
+.grid-container > * {
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  background-image: url(../imgs/headerFondo.jpg);
+  color: black;
+  padding: 1px;
+  display: flex;
+  min-height: 70px;
+  align-items: center;
+  margin-top: 0px;
+}
+@media screen and (max-width: 700px) {
+  .header {
+    display: flex;
+    width: auto;
+    height: auto;
+  }
+}
+
+.tituloIndex {
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  justify-content: space-around;
+}
+@media screen and (max-width: 700px) {
+  .logo {
+    display: none;
+  }
+}
+
+.menuPrincipal {
+  font-weight: 600;
+  padding-right: 10px;
+  color: black;
+  justify-content: end;
+  align-items: center;
+  /* background-color: aqua;*/
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+@media screen and (max-width: 700px) {
+  .menuPrincipal {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.navBarMenuPrincipal {
+  justify-content: end;
+  /* background-color: #9f1000;*/
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.menuPrincipal li a:hover {
+  padding: 5.5px;
+  color: white;
+}
+
+.menuLi {
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 15px;
+  margin: 2px;
+  /*background-color: black;*/
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  font-family: "Young Serif";
+}
+
+ul li a {
+  color: rgb(221, 221, 221);
+  background-color: #002a86;
+  padding: 5px;
+  margin-left: 1px;
+  border-radius: 0.3rem;
+  transition-delay: 0.1s;
+  justify-content: center;
+}
+
+.videoIndex {
+  width: auto;
+  height: auto;
+  border: 1rem;
+  border-color: black;
+}
+
+.videoPresentacion {
+  width: 60%;
+  height: 80%;
+}
+
+.videoPresentacion2 {
+  width: 60%;
+  height: 60%;
+}
+
+.videoIndex2 {
+  width: auto;
+  height: auto;
+  border: 1rem;
+  border-color: black;
+}
+
+.flex-container {
+  margin: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 10px;
+  margin: 10px;
+}
+
+.flex-item {
+  flex-basis: 200px;
+  flex-grow: 1;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+.PresentacionPerImg {
+  width: 50%;
+}
+
+.presentacionTitulo {
+  font-size: 21px;
+}
+
+.presentacionParrafo {
+  font-size: 18px;
+}
+
+.PresentacionPerImg, .presentacionTitulo, .presentacionParrafo {
+  margin-bottom: 10px;
+}
+
+.servicio {
+  min-width: 250px;
+}
+
+.menuServicio {
+  color: white;
+  font-family: "Gabarito";
+  background-color: white;
+  list-style: none;
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+}
+
+.menuServicio li {
+  padding: 10px;
+}
+
+.menuServicio li a:hover {
+  color: white;
+  padding: 6px;
+}
+
+.ejecutivo {
+  color: black;
+  background-color: white;
+  margin: 15px;
+  padding: 10px;
+  min-width: 250px;
+  flex-wrap: wrap;
+}
+
+.gerente {
+  color: black;
+  background-color: white;
+  margin: 15px;
+  padding: 10px;
+  min-width: 250px;
+  flex-wrap: wrap;
+}
+
+.cocinero {
+  color: black;
+  background-color: white;
+  margin: 15px;
+  padding: 10px;
+  min-width: 250px;
+  flex-wrap: wrap;
+}
+
+.camionero {
+  color: black;
+  background-color: white;
+  margin: 15px;
+  padding: 10px;
+  min-width: 250px;
+  flex-wrap: wrap;
+}
+
+.servicioSubtitulo {
+  margin: 5px;
+  padding: 15px;
+  font-family: "Gabarito";
+  font-size: 40px;
+}
+
+.parrafoServicio {
+  font-family: "Young Serif";
+  text-align: start;
+}
+
+.servicioLista {
+  color: black;
+  font-family: "Young Serif";
+  flex-wrap: wrap;
+  margin-right: 10px;
+  text-align: start;
+}
+
+.masinfoTitulo {
+  font-family: "Young Serif";
+  color: #9f1000;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cajaMasinfo {
+  background-color: white;
+  margin: 30px;
+  padding: 20px;
+  color: #002a86;
+  font-family: "Gabarito";
+  text-align: left;
+  border-radius: 10px;
+  animation: slide-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.cajaMasinfo2 {
+  background-color: white;
+  margin: 30px;
+  padding: 20px;
+  color: #002a86;
+  font-family: "Gabarito";
+  text-align: left;
+  border-radius: 10px;
+  animation: slide-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1s;
+}
+
+.carousel {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+.slide {
+  margin-top: 10px;
+}
+
+.slide img {
+  height: 65vh;
+}
+
+.infoSaul {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  height: auto;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+.infoSaul .subSaul {
+  color: #9f1000;
+  margin: 10px;
+}
+.infoSaul .saulParrafo {
+  font-size: 18px;
+  margin: 20px;
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+}
+.infoSaul .saulParrafo2 {
+  font-size: 18px;
+  margin: 20px;
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  animation: slide-in-tl 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 2s;
+}
+
+.contenedorForm {
+  background-color: white;
+  color: #9f1000;
+  padding: 30px;
+  font-family: "Gabarito";
+  position: relative;
+  margin: 30px;
+  width: auto;
+  height: auto;
+}/*# sourceMappingURL=estilos.css.map */

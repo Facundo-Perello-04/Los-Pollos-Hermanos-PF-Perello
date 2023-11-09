@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    color: $secondaryColor ;
+    font-family: $fontYoungserif;
+    font-size: 50px;
+    padding: 15px;
+
+}
+
+h3{
+    color:$secondaryColor;
+    font-family: $fontYoungserif ;
+}
+div {
+    display: block;
+}
+img {
+    overflow: clip;
+    border-style: none;
+}
+h2{
+    font-family: $fontYoungserif;
+
+}
+p{
+    font-family: $fontGabarito;
+
+}
+body{
+    background-color:$mainColor;
+    min-height: 100%;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    
+}

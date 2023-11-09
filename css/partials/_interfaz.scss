@@ -1,0 +1,161 @@
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "header" 100px
+    "main" auto
+    "footer" 100px
+    ;
+    @include mobile{
+        display: grid;
+        gap: 10px;
+        grid-template: 
+        "header" 120px
+        "main" auto
+        "footer" 100px
+        ;
+
+    }
+
+}
+body{
+    background-color:#fccc00;
+    min-height: 100%;
+}
+.footerLista{
+    list-style: none;
+}
+.grid-container > *{
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.header{
+    grid-area: header;
+    background-image: url(../imgs/headerFondo.jpg);
+
+    color: black;
+   padding: 1px;
+    display: flex;
+    min-height: 70px;
+    align-items: center;
+    margin-top: 0px;
+
+    @include mobile{
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+
+
+}
+.tituloIndex{
+    -webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: space-around;
+    @include mobile{
+        display: none;
+    }
+
+
+}
+.menuPrincipal{
+    font-weight: 600;
+    padding-right: 10px;
+    color: black;
+    justify-content: end;
+    align-items: center;
+   /* background-color: aqua;*/
+   padding-top: 15px;
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   padding: 5px;
+   margin: 5px;
+   @include mobile{
+    align-items:  center;
+    justify-content: center;
+   }
+}
+.navBarMenuPrincipal{
+    justify-content: end;
+   /* background-color: #9f1000;*/
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.menuPrincipal li a:hover{
+    padding: 5.5px;
+    color: white;
+
+}
+.menuLi{
+    color:rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 15px;
+    margin: 2px;
+    /*background-color: black;*/
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    font-family: $fontYoungserif;
+}
+
+
+
+ul li a{
+    color: rgb(221, 221, 221);
+   
+    
+    background-color: #002a86;
+    padding: 5px;
+    margin-left: 1px;
+    border-radius: 0.3rem;
+    transition-delay: 0.1s;
+    justify-content: center;
+    
+}
+.videoIndex{
+    
+    width: auto;
+    height: auto;
+    border: 1rem;
+    border-color: black;
+
+}
+.videoPresentacion{
+    width: 60%;
+    height: 80%;
+
+
+
+}
+.videoPresentacion2{
+    width: 60%;
+    height: 60%;
+}
+.videoIndex2{
+    
+    width: auto;
+    height: auto;
+    border: 1rem;
+    border-color: black;
+
+}

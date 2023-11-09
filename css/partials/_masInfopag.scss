@@ -1,0 +1,41 @@
+.masinfoTitulo{
+    font-family:$fontYoungserif ;
+    color: $secondaryColor;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.cajaMasinfo{
+    background-color: white;
+    margin: 30px ;
+    padding: 20px;
+    color: #002a86; 
+    font-family: $fontGabarito;
+    text-align: left;
+   border-radius: 10px;
+   -webkit-animation:slide-in-tl .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-tl .5s cubic-bezier(.25,.46,.45,.94) both;
+}
+.cajaMasinfo2{
+    background-color: white;
+    margin: 30px ;
+    padding: 20px;
+    color: #002a86; 
+    font-family: $fontGabarito;
+    text-align: left;
+   border-radius: 10px;
+   -webkit-animation:slide-in-tl .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-tl .5s cubic-bezier(.25,.46,.45,.94) both;
+   animation-delay: 1s;
+
+}
+.carousel {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+.slide{
+    margin-top: 10px;
+}
+.slide img{
+    height: 65vh;
+
+}

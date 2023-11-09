@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
+
+$fontYoungserif: "Young Serif";
+$fontGabarito: "Gabarito";
+$mainColor: #fccc00;
+$secondaryColor: #9f1000;
+
+
+
+/*ANIMACIONES*/
+.slide-in-tl{-webkit-animation:slide-in-tl .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-tl .5s cubic-bezier(.25,.46,.45,.94) both}
+
+ @-webkit-keyframes slide-in-tl{0%{-webkit-transform:translateY(-1000px) translateX(-1000px);transform:translateY(-1000px) translateX(-1000px);opacity:0}100%{-webkit-transform:translateY(0) translateX(0);transform:translateY(0) translateX(0);opacity:1}}@keyframes slide-in-tl{0%{-webkit-transform:translateY(-1000px) translateX(-1000px);transform:translateY(-1000px) translateX(-1000px);opacity:0}100%{-webkit-transform:translateY(0) translateX(0);transform:translateY(0) translateX(0);opacity:1}}
+
+
+ .tracking-in-expand{-webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both}
+
+@-webkit-keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}

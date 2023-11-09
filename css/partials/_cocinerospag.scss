@@ -1,0 +1,45 @@
+.flex-container{
+    margin: 40px;
+    
+   
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px;
+    margin: 10px;
+    
+   
+   
+}
+.flex-item{
+    flex-basis: 200px;
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+   
+    
+
+
+    
+   
+}
+
+
+.PresentacionPerImg{
+    width: 50%;
+}
+.presentacionTitulo{
+    font-size: 21px;
+}
+.presentacionParrafo{
+    font-size: 18px;
+}
+.PresentacionPerImg, .presentacionTitulo, .presentacionParrafo{
+    margin-bottom: 10px;
+}

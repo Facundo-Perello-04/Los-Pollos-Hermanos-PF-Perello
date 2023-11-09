@@ -55,7 +55,6 @@ p{
 body{
     background-color:#fccc00;
     min-height: 100%;
-    margin: 0px;
 }
 .footerLista{
     list-style: none;
@@ -193,7 +192,7 @@ ul li a{
     padding: 10px;
 
 
-    transition: transform 1s;
+    transition: all 1s;
 }
 
 .flex1{
